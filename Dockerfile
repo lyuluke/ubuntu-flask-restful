@@ -3,6 +3,11 @@ LABEL  maintainer="LK"
 
 RUN \
 #==================================================
+# Work space
+#==================================================
+  mkdir /code &&\
+
+#==================================================
 # Ubuntu chinese source
 #==================================================
   #sed -i "s@http://.*archive.ubuntu.com@http://mirrors.huaweicloud.com@g" /etc/apt/sources.list && \
@@ -29,3 +34,5 @@ RUN \
 # apt clean
 #==================================================
   apt-get clean && rm -rf /var/lib/apt/lists/* \
+
+WORKDIR /code
