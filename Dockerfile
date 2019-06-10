@@ -29,5 +29,3 @@ RUN \
 # apt clean
 #==================================================
   apt-get clean && rm -rf /var/lib/apt/lists/* \
-
-CMD ["/bin/bash"]
