@@ -14,8 +14,8 @@ RUN \
 #==================================================
 # flask
 #==================================================
-  pip install flask &&\
-  pip install flask-restful \
+  pip3 install flask &&\
+  pip3 install flask-restful \
   
 
 CMD ["/bin/bash"]
