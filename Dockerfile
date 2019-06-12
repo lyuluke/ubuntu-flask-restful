@@ -36,6 +36,7 @@ RUN \
   #pip3 install flask-restful &&\
   pip3 install wheel &&\
   pip3 install flask_restplus &&\
+  pip3 install requests &&\
 
 #==================================================
 # apt clean
