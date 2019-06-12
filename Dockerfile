@@ -1,11 +1,17 @@
 FROM ubuntu:18.04
 LABEL  maintainer="LK"
 
+COPY AutoSSH /usr/bin/AutoSSH
+
 RUN \
+#==================================================
+# Executable
+#==================================================
+  chmod 777 /usr/bin/AutoSSH &&\
 #==================================================
 # Work space
 #==================================================
-  mkdir /code &&\
+  #mkdir /code &&\
 
 #==================================================
 # Ubuntu chinese source
@@ -20,7 +26,8 @@ RUN \
   apt-get -qqy --no-install-recommends install \
     python3.6 \
     python3-pip \
-    python3-setuptools &&\
+    python3-setuptools \ 
+    curl &&\
 
 #==================================================
 # Flask
