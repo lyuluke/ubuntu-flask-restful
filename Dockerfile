@@ -26,7 +26,10 @@ RUN \
     curl \
     git \
     supervisor \
-    libltdl-dev &&\
+    libltdl-dev \
+    postgresql \
+    python-psycopg2 \ 
+    libpq-dev &&\
 #==================================================
 # Flask
 #==================================================
