@@ -23,9 +23,9 @@ RUN \
   apt-get -qqy --no-install-recommends install \
     python3.6 \
     python3-pip \
-    python3-setuptools \ 
-    build-dep \
-    python3-dev\
+    python3-setuptools \
+    python3-numpy \
+    python3-pandas \
     curl \
     git \
     supervisor \
@@ -41,8 +41,6 @@ RUN \
   pip3 --no-cache-dir install wheel &&\
   pip3 --no-cache-dir install flask_restplus &&\
   pip3 --no-cache-dir install requests &&\
-  pip3 --no-cache-dir install numpy &&\
-  pip3 --no-cache-dir install pandas &&\
   pip3 --no-cache-dir install SQLAlchemy &&\
   pip3 --no-cache-dir install psycopg2 &&\
   pip3 --no-cache-dir install requests &&\
