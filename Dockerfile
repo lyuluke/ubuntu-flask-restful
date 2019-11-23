@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 LABEL  maintainer="LK"
 COPY AutoSSH /usr/bin/AutoSSH
+ENV DEBIAN_FRONTEND noninteractive
 RUN \
 #==================================================
 # Executable
