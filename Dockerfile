@@ -24,6 +24,8 @@ RUN \
     python3.6 \
     python3-pip \
     python3-setuptools \ 
+    build-dep \
+    python3-dev\
     curl \
     git \
     supervisor \
